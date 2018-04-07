@@ -1,0 +1,30 @@
+
+{
+    "ppApp": {
+        "girls" : {
+            "home": {
+                "title": "Girls",
+                "createLabel": "Créer un nouveau Girls",
+                "createOrEditLabel": "Créer ou éditer un Girls"
+            },
+            "created": "Un nouveau Girls a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Girls avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Girls avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Girls {{ id }} ?"
+            },
+            "detail": {
+                "title": "Girls"
+            },
+            "name": "Name",
+            "age": "Age",
+            "country": "Country",
+            "location": "Location",
+            "active": "Active",
+            "lat": "Lat",
+            "log": "Log",
+            "expirationDate": "Expiration Date",
+            "jhipsterUserID": "Jhipster User ID"
+        }
+    }
+}
