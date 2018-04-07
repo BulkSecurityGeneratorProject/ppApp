@@ -1,0 +1,30 @@
+entity Girls {
+	name String required
+    age Integer required
+    country String required
+    location String required
+    active Boolean
+    lat Float
+    log Float
+    expirationDate ZonedDateTime
+    jhipsterUserID String
+}
+
+entity Preferences {
+
+	name String
+
+}
+
+
+
+// Set pagination options
+paginate * with infinite-scroll
+
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+// Set an angular suffix
+angularSuffix * with mySuffix
