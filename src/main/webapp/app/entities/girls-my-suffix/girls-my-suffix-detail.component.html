@@ -1,0 +1,58 @@
+
+<div *ngIf="girls">
+    <h2><span jhiTranslate="ppApp.girls.detail.title">Girls</span> {{girls.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="ppApp.girls.name">Name</span></dt>
+        <dd>
+            <span>{{girls.name}}</span>
+        </dd>
+        <dt><span jhiTranslate="ppApp.girls.age">Age</span></dt>
+        <dd>
+            <span>{{girls.age}}</span>
+        </dd>
+        <dt><span jhiTranslate="ppApp.girls.country">Country</span></dt>
+        <dd>
+            <span>{{girls.country}}</span>
+        </dd>
+        <dt><span jhiTranslate="ppApp.girls.location">Location</span></dt>
+        <dd>
+            <span>{{girls.location}}</span>
+        </dd>
+        <dt><span jhiTranslate="ppApp.girls.active">Active</span></dt>
+        <dd>
+            <span>{{girls.active}}</span>
+        </dd>
+        <dt><span jhiTranslate="ppApp.girls.lat">Lat</span></dt>
+        <dd>
+            <span>{{girls.lat}}</span>
+        </dd>
+        <dt><span jhiTranslate="ppApp.girls.log">Log</span></dt>
+        <dd>
+            <span>{{girls.log}}</span>
+        </dd>
+        <dt><span jhiTranslate="ppApp.girls.expirationDate">Expiration Date</span></dt>
+        <dd>
+            <span>{{girls.expirationDate | date:'medium'}}</span>
+        </dd>
+        <dt><span jhiTranslate="ppApp.girls.jhipsterUserID">Jhipster User ID</span></dt>
+        <dd>
+            <span>{{girls.jhipsterUserID}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'girls-my-suffix/'+ girls.id + '/edit'} }]"
+            replaceUrl="true"
+            queryParamsHandling="merge"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

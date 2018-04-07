@@ -1,0 +1,30 @@
+
+{
+    "ppApp": {
+        "girls" : {
+            "home": {
+                "title": "Girls",
+                "createLabel": "Create a new Girls",
+                "createOrEditLabel": "Create or edit a Girls"
+            },
+            "created": "A new Girls is created with identifier {{ param }}",
+            "updated": "A Girls is updated with identifier {{ param }}",
+            "deleted": "A Girls is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Girls {{ id }}?"
+            },
+            "detail": {
+                "title": "Girls"
+            },
+            "name": "Name",
+            "age": "Age",
+            "country": "Country",
+            "location": "Location",
+            "active": "Active",
+            "lat": "Lat",
+            "log": "Log",
+            "expirationDate": "Expiration Date",
+            "jhipsterUserID": "Jhipster User ID"
+        }
+    }
+}
