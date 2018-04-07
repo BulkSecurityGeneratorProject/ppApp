@@ -1,0 +1,15 @@
+version: '2'
+services:
+    ppapp-app:
+        image: ppapp
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATA_MONGODB_URI=mongodb://ppapp-mongodb:27017
+            - SPRING_DATA_MONGODB_DATABASE=ppApp
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+        ports:
+            - 8080:8080
+    ppapp-mongodb:
+        extends:
+            file: mongodb.yml
+            service: ppapp-mongodb
